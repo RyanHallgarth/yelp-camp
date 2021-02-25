@@ -1,11 +1,13 @@
 <% layout('layouts/boilerplate') %>
 
     <div class="mb-3" id="cluster-map"></div>
-    <div class="row">
-        <h1 class="col-6 offset-3">Search and View Campgrounds</h1>
 
+    <div class="container">
+        <div class="row">
+            <h1 class="col-6 offset-3 text-center" id="indexHeader">Search and View Campgrounds</h1>
+            <a class=" col-6 offset-3  mb-3 btn btn-primary" href="/campgrounds/new">Add New Campground</a>
+        </div>
     </div>
-    <a href="/campgrounds/new">Add New Campground</a>
 
 
     <% for (let campground of campgrounds) {%>
